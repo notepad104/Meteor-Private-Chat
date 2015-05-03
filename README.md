@@ -1,4 +1,3 @@
 # Meteor-Private-Chat 
-```link
-Deployed on http://chat-shubham.meteor.com/
-```
+
+[Live Demo](http://chat-shubham.meteor.com)
