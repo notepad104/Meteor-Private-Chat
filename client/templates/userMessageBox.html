@@ -1,0 +1,33 @@
+ <template name = "userMessageBox">
+ <div class="chatContainer">
+        <div class="chatMsgContainer">
+            <div class="panel panel-info msgPanel">
+                <div class="panel-heading">
+                <span class="glyphicon glyphicon-comment"></span>
+                {{curuser}}
+                </div>
+                <div class="panel-body">
+                    <div class="list-group msgListGroup">
+                        {{#each messages}}
+                            {{> chatMessage}}
+                        {{/each}}
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="sendMsgContainer">
+                        <form id="chatMsgForm">
+                            <div class="msgContainer pull-left">
+                                <input type="text" class="form-control" id="textMessage"
+                                       placeholder="Enter your message here"
+                                       style="font-size: 18px">
+                                <span class="material-input"></span>
+                            </div>
+                            <div class="btnContainer pull-left">
+                                <button id="btnSend" type="submit" class="btn btn-info">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

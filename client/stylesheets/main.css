@@ -1,0 +1,101 @@
+#signIn > button {
+    background-color: #4099FF;
+}
+
+#signUp > button {
+    background-color: #4099FF;
+}
+a {
+    color: #4099FF;
+}
+.headerDiv {
+    position: fixed;
+    top: 10px;
+    left: 40px;
+    right: 50px;
+    height: 20px;
+}
+
+.sidebar {
+    width: 260px;
+    position: fixed;
+    left: 40px;
+    top: 50px;
+    bottom: 30px;
+}
+
+.chatContainer {
+    position: fixed;
+    top: 50px;
+    bottom: 20px;
+    left: 315px;
+    right: 25px;
+    background-color: #ededed;
+}
+
+.chatMsgContainer {
+    position: absolute;
+    top: 0;
+    bottom: -10px;
+    left: 0;
+    right: 20px;
+    background-color: #ededed;
+}
+
+.msgPanel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sendMsgContainer {
+    height: 65px;
+    bottom: 0;
+    right: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.msgContainer {
+    position: absolute;
+    left: 10px;
+    margin-top: 10px;
+    right: 160px;
+}
+
+.btnContainer {
+    position: absolute;
+    right: 10px;
+}
+
+.usersListGroup {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    left: 15px;
+    bottom: 10px;
+    overflow: auto;
+}
+
+.msgListGroup {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    left: 0;
+    bottom: 50px;
+    overflow: auto;
+}
+.chatbutton
+{
+    width: 100%; 
+display:block;
+background-color:white;
+color:white;
+border: none;
+
+}
+.chatbutton:hover{
+   background-color:#cbd3db;
+}
