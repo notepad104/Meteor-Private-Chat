@@ -14,5 +14,8 @@ Template.userMessageBox.events({
         var message = template.$('[id=textMessage]').val();
         Meteor.call("newChatMessage", message, Session.get('curuser'));
         template.$('[id=textMessage]').val("");
+        var elem = template.$('[id=messages]');
+        console.log(elem[0]);
+        elem.animate({ scrollTop: elem[0].scrollHeight}, 2000);
     }
 });
