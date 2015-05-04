@@ -8,6 +8,9 @@
                 </div>
                 <div class="panel-body">
                     <div class="list-group msgListGroup" id = "messages">
+                        <div class="list-group-item" style="padding-bottom: 0.5cm;">
+                        <button class="btn btn-sm btn-primary" id = "incr">Load Previous Messages</button>
+                        </div>
                         {{#each messages}}
                             {{> chatMessage}}
                         {{/each}}

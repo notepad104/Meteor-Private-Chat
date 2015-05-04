@@ -1,3 +1,6 @@
+Template.chat.created = function(){
+    Session.set('showModal', false);
+};
 Template.registerHelper('formatDate', function (date) {
     return moment(date).from(new Date());
 });

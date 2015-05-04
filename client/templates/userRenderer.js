@@ -26,5 +26,13 @@ Template.userRenderer.events({
     'click #showModalButton': function(){
         Session.set('curuser',this.profile.name);
         Session.set('showModal', true);
+        Session.set('limit', 10);
+        setTimeout(function(){
+            var div  = $('[id=messages]');
+            var elem = document.getElementById("messages");
+            console.log(elem.scrollHeight);
+            div.animate({ scrollTop: elem.scrollHeight}, 300);
+        },200);
+        
     },
 });
